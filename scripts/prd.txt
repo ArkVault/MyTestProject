@@ -1,0 +1,20 @@
+Feature: Supabase Project Setup
+As a developer,
+I want to create a new Supabase project named "MyTestProject"
+So that I can start building an application with a backend and database.
+
+Acceptance Criteria:
+- A Supabase project named "MyTestProject" is successfully created.
+- The project is created in the 'us-east-1' region.
+- A secure database password ('CascadeSup@b3sT!') is used and noted.
+
+Feature: User Database Creation
+As a developer,
+I want to set up a user database within the "MyTestProject" Supabase project
+So that I can manage user profiles and application-specific user data.
+
+Acceptance Criteria:
+- Supabase's built-in `auth.users` table is available for authentication.
+- A new table (e.g., 'profiles') is created to store additional user information.
+- The 'profiles' table is linked to the `auth.users` table via a foreign key relationship (user_id).
+- The 'profiles' table includes at least a 'username' and 'updated_at' field.
